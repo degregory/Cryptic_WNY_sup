@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="..\..\..\..\GP.fasta" hasGeneTrack="false" hasSequenceTrack="true" locus="SARS2_GP:1187-1785" version="8">
+    <Resources>
+        <Resource path="NY10_6-7RBDB_H12.sorted.bam" type="bam"/>
+        <Resource path="WWTP10_02-22_QC84.sorted.bam" type="bam"/>
+        <Resource path="NY10_5-10RBDA_C04.sorted.bam" type="bam"/>
+        <Resource path="NY10_6-28RBD_G11.sorted.bam" type="bam"/>
+        <Resource path="NY10_4-19RBDA.sorted.bam" type="bam"/>
+        <Resource path="NY10_5-26RBDB_H11.sorted.bam" type="bam"/>
+        <Resource path="NY10_4-19RBDB.sorted.bam" type="bam"/>
+        <Resource path="NY10_6-7RBD_H09.sorted.bam" type="bam"/>
+        <Resource path="NY10_4-4RBD.sorted.bam" type="bam"/>
+        <Resource path="NY10_5-26RBDA_H09.sorted.bam" type="bam"/>
+    </Resources>
+    <Panel height="1598" name="Panel1631841580246" width="1661">
+        <Track attributeKey="NY10_4-4RBD.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;111398.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_4-4RBD.sorted.bam_coverage" name="NY10_4-4RBD.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="111398.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NY10_4-4RBD.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_4-4RBD.sorted.bam_junctions" name="NY10_4-4RBD.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="NY10_4-4RBD.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_4-4RBD.sorted.bam" name="NY10_4-4RBD.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="3138" name="Panel1631841580266" width="1661">
+        <Track attributeKey="NY10_4-19RBDA.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;142018.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_4-19RBDA.sorted.bam_coverage" name="NY10_4-19RBDA.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="142018.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NY10_4-19RBDA.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_4-19RBDA.sorted.bam_junctions" name="NY10_4-19RBDA.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="NY10_4-19RBDA.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_4-19RBDA.sorted.bam" name="NY10_4-19RBDA.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="3124" name="Panel1631841580280" width="1661">
+        <Track attributeKey="NY10_4-19RBDB.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;158582.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_4-19RBDB.sorted.bam_coverage" name="NY10_4-19RBDB.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="158582.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NY10_4-19RBDB.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_4-19RBDB.sorted.bam_junctions" name="NY10_4-19RBDB.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="NY10_4-19RBDB.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_4-19RBDB.sorted.bam" name="NY10_4-19RBDB.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="1710" name="Panel1631841580297" width="1661">
+        <Track attributeKey="NY10_5-10RBDA_C04.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;205899.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_5-10RBDA_C04.sorted.bam_coverage" name="NY10_5-10RBDA_C04.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="205899.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NY10_5-10RBDA_C04.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_5-10RBDA_C04.sorted.bam_junctions" name="NY10_5-10RBDA_C04.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="NY10_5-10RBDA_C04.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_5-10RBDA_C04.sorted.bam" name="NY10_5-10RBDA_C04.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="1486" name="Panel1631841580310" width="1661">
+        <Track attributeKey="NY10_5-26RBDA_H09.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;211920.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_5-26RBDA_H09.sorted.bam_coverage" name="NY10_5-26RBDA_H09.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="211920.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NY10_5-26RBDA_H09.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_5-26RBDA_H09.sorted.bam_junctions" name="NY10_5-26RBDA_H09.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="NY10_5-26RBDA_H09.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_5-26RBDA_H09.sorted.bam" name="NY10_5-26RBDA_H09.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="1486" name="Panel1631841580330" width="1661">
+        <Track attributeKey="NY10_5-26RBDB_H11.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;160669.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_5-26RBDB_H11.sorted.bam_coverage" name="NY10_5-26RBDB_H11.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="160669.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NY10_5-26RBDB_H11.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_5-26RBDB_H11.sorted.bam_junctions" name="NY10_5-26RBDB_H11.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="NY10_5-26RBDB_H11.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_5-26RBDB_H11.sorted.bam" name="NY10_5-26RBDB_H11.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="1878" name="Panel1631841580345" width="1661">
+        <Track attributeKey="NY10_6-7RBD_H09.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;174452.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_6-7RBD_H09.sorted.bam_coverage" name="NY10_6-7RBD_H09.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="174452.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NY10_6-7RBD_H09.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_6-7RBD_H09.sorted.bam_junctions" name="NY10_6-7RBD_H09.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="NY10_6-7RBD_H09.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_6-7RBD_H09.sorted.bam" name="NY10_6-7RBD_H09.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="1822" name="Panel1631841580363" width="1661">
+        <Track attributeKey="NY10_6-7RBDB_H12.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;136393.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_6-7RBDB_H12.sorted.bam_coverage" name="NY10_6-7RBDB_H12.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="136393.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NY10_6-7RBDB_H12.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_6-7RBDB_H12.sorted.bam_junctions" name="NY10_6-7RBDB_H12.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="NY10_6-7RBDB_H12.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_6-7RBDB_H12.sorted.bam" name="NY10_6-7RBDB_H12.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="1486" name="Panel1631841580394" width="1661">
+        <Track attributeKey="NY10_6-28RBD_G11.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;95864.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_6-28RBD_G11.sorted.bam_coverage" name="NY10_6-28RBD_G11.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="95864.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NY10_6-28RBD_G11.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_6-28RBD_G11.sorted.bam_junctions" name="NY10_6-28RBD_G11.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="NY10_6-28RBD_G11.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\NY10_6-28RBD_G11.sorted.bam" name="NY10_6-28RBD_G11.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="1486" name="Panel1631841580418" width="1661">
+        <Track attributeKey="WWTP10_02-22_QC84.sorted.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;6719.0;255,255,255;175,175,175" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\WWTP10_02-22_QC84.sorted.bam_coverage" name="WWTP10_02-22_QC84.sorted.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="6719.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="WWTP10_02-22_QC84.sorted.bam Junctions" clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" groupByStrand="false" height="60" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\WWTP10_02-22_QC84.sorted.bam_junctions" name="WWTP10_02-22_QC84.sorted.bam Junctions" visible="false"/>
+        <Track attributeKey="WWTP10_02-22_QC84.sorted.bam" clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="OTHER" fontSize="10" id="G:\MU_WW\SARS2\NYrat_manuscript\Cryptic_WNY_sup\IGV\WWTP10\WWTP10_02-22_QC84.sorted.bam" name="WWTP10_02-22_QC84.sorted.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="20" name="FeaturePanel" width="1661">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="POSITIVE" shouldShowTranslation="false" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.007371007371007371,0.09705159705159705,0.1941031941031941,0.29115479115479115,0.3882063882063882,0.48525798525798525,0.5823095823095823,0.6793611793611793,0.7764127764127764,0.8734643734643734,0.9705159705159705"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
