@@ -1,0 +1,71 @@
+##fileformat=VCFv4.1
+##fileDate=20210826
+##source=freeBayes v0.9.21
+##reference=/mnt/g/MU_WW/SARS2/GP.fasta
+##phasing=none
+##commandline="freebayes -f /mnt/g/MU_WW/SARS2/GP.fasta -p 1 --min-coverage 10 -C 10 -G 10 -F .01 NY11_6-14RBDB_H05.sorted.bam -v NY11_6-14RBDB_H05.vcf"
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of samples with data">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total read depth at the locus">
+##INFO=<ID=DPB,Number=1,Type=Float,Description="Total read depth per bp at the locus; bases in reads overlapping / bases in haplotype">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Total number of alternate alleles in called genotypes">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1]">
+##INFO=<ID=RO,Number=1,Type=Integer,Description="Reference allele observation count, with partial observations recorded fractionally">
+##INFO=<ID=AO,Number=A,Type=Integer,Description="Alternate allele observations, with partial observations recorded fractionally">
+##INFO=<ID=PRO,Number=1,Type=Float,Description="Reference allele observation count, with partial observations recorded fractionally">
+##INFO=<ID=PAO,Number=A,Type=Float,Description="Alternate allele observations, with partial observations recorded fractionally">
+##INFO=<ID=QR,Number=1,Type=Integer,Description="Reference allele quality sum in phred">
+##INFO=<ID=QA,Number=A,Type=Integer,Description="Alternate allele quality sum in phred">
+##INFO=<ID=PQR,Number=1,Type=Float,Description="Reference allele quality sum in phred for partial observations">
+##INFO=<ID=PQA,Number=A,Type=Float,Description="Alternate allele quality sum in phred for partial observations">
+##INFO=<ID=SRF,Number=1,Type=Integer,Description="Number of reference observations on the forward strand">
+##INFO=<ID=SRR,Number=1,Type=Integer,Description="Number of reference observations on the reverse strand">
+##INFO=<ID=SAF,Number=A,Type=Integer,Description="Number of alternate observations on the forward strand">
+##INFO=<ID=SAR,Number=A,Type=Integer,Description="Number of alternate observations on the reverse strand">
+##INFO=<ID=SRP,Number=1,Type=Float,Description="Strand balance probability for the reference allele: Phred-scaled upper-bounds estimate of the probability of observing the deviation between SRF and SRR given E(SRF/SRR) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=SAP,Number=A,Type=Float,Description="Strand balance probability for the alternate allele: Phred-scaled upper-bounds estimate of the probability of observing the deviation between SAF and SAR given E(SAF/SAR) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=AB,Number=A,Type=Float,Description="Allele balance at heterozygous sites: a number between 0 and 1 representing the ratio of reads showing the reference allele to all reads, considering only reads from individuals called as heterozygous">
+##INFO=<ID=ABP,Number=A,Type=Float,Description="Allele balance probability at heterozygous sites: Phred-scaled upper-bounds estimate of the probability of observing the deviation between ABR and ABA given E(ABR/ABA) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=RUN,Number=A,Type=Integer,Description="Run length: the number of consecutive repeats of the alternate allele in the reference genome">
+##INFO=<ID=RPP,Number=A,Type=Float,Description="Read Placement Probability: Phred-scaled upper-bounds estimate of the probability of observing the deviation between RPL and RPR given E(RPL/RPR) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=RPPR,Number=1,Type=Float,Description="Read Placement Probability for reference observations: Phred-scaled upper-bounds estimate of the probability of observing the deviation between RPL and RPR given E(RPL/RPR) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=RPL,Number=A,Type=Float,Description="Reads Placed Left: number of reads supporting the alternate balanced to the left (5') of the alternate allele">
+##INFO=<ID=RPR,Number=A,Type=Float,Description="Reads Placed Right: number of reads supporting the alternate balanced to the right (3') of the alternate allele">
+##INFO=<ID=EPP,Number=A,Type=Float,Description="End Placement Probability: Phred-scaled upper-bounds estimate of the probability of observing the deviation between EL and ER given E(EL/ER) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=EPPR,Number=1,Type=Float,Description="End Placement Probability for reference observations: Phred-scaled upper-bounds estimate of the probability of observing the deviation between EL and ER given E(EL/ER) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=DPRA,Number=A,Type=Float,Description="Alternate allele depth ratio.  Ratio between depth in samples with each called alternate allele and those without.">
+##INFO=<ID=ODDS,Number=1,Type=Float,Description="The log odds ratio of the best genotype combination to the second-best.">
+##INFO=<ID=GTI,Number=1,Type=Integer,Description="Number of genotyping iterations required to reach convergence or bailout.">
+##INFO=<ID=TYPE,Number=A,Type=String,Description="The type of allele, either snp, mnp, ins, del, or complex.">
+##INFO=<ID=CIGAR,Number=A,Type=String,Description="The extended CIGAR representation of each alternate allele, with the exception that '=' is replaced by 'M' to ease VCF parsing.  Note that INDEL alleles do not have the first matched base (which is provided by default, per the spec) referred to by the CIGAR.">
+##INFO=<ID=NUMALT,Number=1,Type=Integer,Description="Number of unique non-reference alleles in called genotypes at this position.">
+##INFO=<ID=MEANALT,Number=A,Type=Float,Description="Mean number of unique non-reference allele observations per sample with the corresponding alternate alleles.">
+##INFO=<ID=LEN,Number=A,Type=Integer,Description="allele length">
+##INFO=<ID=MQM,Number=A,Type=Float,Description="Mean mapping quality of observed alternate alleles">
+##INFO=<ID=MQMR,Number=1,Type=Float,Description="Mean mapping quality of observed reference alleles">
+##INFO=<ID=PAIRED,Number=A,Type=Float,Description="Proportion of observed alternate alleles which are supported by properly paired read fragments">
+##INFO=<ID=PAIREDR,Number=1,Type=Float,Description="Proportion of observed reference alleles which are supported by properly paired read fragments">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Float,Description="Genotype Quality, the Phred-scaled marginal (or unconditional) probability of the called genotype">
+##FORMAT=<ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=RO,Number=1,Type=Integer,Description="Reference allele observation count">
+##FORMAT=<ID=QR,Number=1,Type=Integer,Description="Sum of quality of the reference observations">
+##FORMAT=<ID=AO,Number=A,Type=Integer,Description="Alternate allele observation count">
+##FORMAT=<ID=QA,Number=A,Type=Integer,Description="Sum of quality of the alternate observations">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	unknown
+SARS2_GP	1250	.	A	C	4.13335e+06	.	AB=0;ABP=0;AC=1;AF=1;AN=1;AO=171362;CIGAR=1X;DP=171760;DPB=171760;DPRA=0;EPP=372067;EPPR=810.798;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=951739;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=6317786;QR=5910;RO=372;RPL=0;RPP=372111;RPPR=810.798;RPR=171362;RUN=1;SAF=171357;SAP=372067;SAR=5;SRF=372;SRP=810.798;SRR=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1:171760:372:5910:171362:6317786:-567706,0
+SARS2_GP	1291	.	G	A	0	.	AB=0;ABP=0;AC=0;AF=0;AN=1;AO=4305;CIGAR=1X;DP=171770;DPB=171770;DPRA=0;EPP=9351.2;EPPR=363475;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=958573;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=47899;QR=6313965;RO=167405;RPL=0;RPP=9351.2;RPPR=363518;RPR=4305;RUN=1;SAF=4305;SAP=9351.2;SAR=0;SRF=167400;SRP=363475;SRR=5;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	0:171770:167405:6313965:4305:47899:0,-563549
+SARS2_GP	1318	.	AAT	GAG	2.2908e+06	.	AB=0;ABP=0;AC=1;AF=1;AN=1;AO=137459;CIGAR=1X1M1X;DP=171769;DPB=171769;DPRA=0;EPP=298448;EPPR=64767.2;GTI=0;LEN=3;MEANALT=32;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=527477;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=4733322;QR=1106533;RO=29825;RPL=0;RPP=298491;RPPR=64767.2;RPR=137459;RUN=1;SAF=137454;SAP=298448;SAR=5;SRF=29825;SRP=64767.2;SRR=0;TYPE=complex	GT:DP:RO:QR:AO:QA:GL	1:171769:29825:1106533:137459:4733322:-326236,0
+SARS2_GP	1331	.	A	C	0	.	AB=0;ABP=0;AC=0;AF=0;AN=1;AO=29708;CIGAR=1X;DP=171773;DPB=171773;DPRA=0;EPP=64513.1;EPPR=308178;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=629076;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=1088002;QR=5252000;RO=141940;RPL=0;RPP=64513.1;RPPR=308222;RPR=29708;RUN=1;SAF=29708;SAP=64513.1;SAR=0;SRF=141935;SRP=308178;SRR=5;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	0:171773:141940:5252000:29708:1088002:0,-374513
+SARS2_GP	1345	.	T	C	1.54749e+06	.	AB=0;ABP=0;AC=1;AF=1;AN=1;AO=121615;CIGAR=1X;DP=171785;DPB=171785;DPRA=0;EPP=264052;EPPR=108787;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=356324;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=4244700;QR=1806713;RO=50101;RPL=0;RPP=264087;RPPR=108796;RPR=121615;RUN=1;SAF=121611;SAP=264052;SAR=4;SRF=50100;SRP=108787;SRR=1;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1:171785:50101:1806713:121615:4244700:-219305,0
+SARS2_GP	1380	.	T	G	2.3694e+06	.	AB=0;ABP=0;AC=1;AF=1;AN=1;AO=137675;CIGAR=1X;DP=171806;DPB=171806;DPRA=0;EPP=298917;EPPR=73985.1;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=545576;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=4839134;QR=1165189;RO=34070;RPL=0;RPP=298960;RPPR=73985.1;RPR=137675;RUN=1;SAF=137670;SAP=298917;SAR=5;SRF=34070;SRP=73985.1;SRR=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1:171806:34070:1165189:137675:4839134:-330458,0
+SARS2_GP	1425	.	C	T	0	.	AB=0;ABP=0;AC=0;AF=0;AN=1;AO=46614;CIGAR=1X;DP=171821;DPB=171821;DPRA=0;EPP=101198;EPPR=271754;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=467507;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=1621987;QR=4668356;RO=125154;RPL=0;RPP=101224;RPPR=271771;RPR=46614;RUN=1;SAF=46611;SAP=101198;SAR=3;SRF=125152;SRP=271754;SRR=2;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	0:171821:125154:4668356:46614:1621987:0,-273971
+SARS2_GP	1451	.	A	C	4.00823e+06	.	AB=0;ABP=0;AC=1;AF=1;AN=1;AO=170804;CIGAR=1X;DP=171825;DPB=171825;DPRA=0;EPP=370856;EPPR=2007.28;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=922929;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=6176931;QR=15341;RO=923;RPL=0;RPP=370899;RPPR=2007.28;RPR=170804;RUN=1;SAF=170799;SAP=370856;SAR=5;SRF=923;SRP=2007.28;SRR=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1:171825:923:15341:170804:6176931:-554193,0
+SARS2_GP	1467	.	CTT	CTA	3.48527e+06	.	AB=0;ABP=0;AC=1;AF=1;AN=1;AO=139018;CIGAR=2M1X;DP=171817;DPB=171817;DPRA=0;EPP=301833;EPPR=11223;GTI=0;LEN=1;MEANALT=20;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=668858;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=5390915;QR=169142;RO=5167;RPL=1;RPP=301868;RPPR=11223;RPR=139017;RUN=1;SAF=139014;SAP=301842;SAR=4;SRF=5167;SRP=11223;SRR=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1:171817:5167:169142:139018:5390915:-469358,0
+SARS2_GP	1480	.	T	C	0	.	AB=0;ABP=0;AC=0;AF=0;AN=1;AO=48065;CIGAR=1X;DP=171827;DPB=171827;DPRA=0;EPP=104349;EPPR=267726;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=485800;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=1868533;QR=4971527;RO=123323;RPL=2;RPP=104357;RPPR=267761;RPR=48063;RUN=1;SAF=48064;SAP=104366;SAR=1;SRF=123319;SRP=267761;SRR=4;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	0:171827:123323:4971527:48065:1868533:0,-278898
+SARS2_GP	1492	.	CAA	TAC	2.51462e+06	.	AB=0;ABP=0;AC=1;AF=1;AN=1;AO=94601;CIGAR=1X1M1X;DP=171828;DPB=171823;DPRA=0;EPP=204377;EPPR=1672.97;GTI=0;LEN=3;MEANALT=23;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=114327;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=3755278;QR=23917;RO=781;RPL=94484;RPP=204411;RPPR=1672.97;RPR=117;RUN=1;SAF=94597;SAP=205392;SAR=4;SRF=781;SRP=1698.93;SRR=0;TYPE=complex	GT:DP:RO:QR:AO:QA:GL	1:171828:781:23917:94601:3755278:-335396,0
+SARS2_GP	1516	.	C	A	0	.	AB=0;ABP=0;AC=0;AF=0;AN=1;AO=3271;CIGAR=1X;DP=171817;DPB=171817;DPRA=0;EPP=7097.21;EPPR=365115;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=837500;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=49134;QR=5745247;RO=168384;RPL=3270;RPP=7097.21;RPPR=365158;RPR=1;RUN=1;SAF=3271;SAP=7105.9;SAR=0;SRF=168379;SRP=365601;SRR=5;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	0:171817:168384:5745247:3271:49134:0,-512363
+SARS2_GP	1524	.	C	A	0	.	AB=0;ABP=0;AC=0;AF=0;AN=1;AO=2687;CIGAR=1X;DP=171804;DPB=171804;DPRA=0;EPP=5820.4;EPPR=366478;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=871683;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=38376;QR=5911961;RO=169004;RPL=2685;RPP=5820.4;RPPR=366522;RPR=2;RUN=1;SAF=2687;SAP=5837.76;SAR=0;SRF=168999;SRP=366947;SRR=5;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	0:171804:169004:5911961:2687:38376:0,-528316
+SARS2_GP	1550	.	T	A	0	.	AB=0;ABP=0;AC=0;AF=0;AN=1;AO=5101;CIGAR=1X;DP=171826;DPB=171826;DPRA=0;EPP=11079.7;EPPR=360752;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=856049;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=73215;QR=5820745;RO=166323;RPL=5101;RPP=11079.7;RPPR=360795;RPR=0;RUN=1;SAF=5101;SAP=11079.7;SAR=0;SRF=166318;SRP=361125;SRR=5;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	0:171826:166323:5820745:5101:73215:0,-516990
+SARS2_GP	1565	.	C	A	0	.	AB=0;ABP=0;AC=0;AF=0;AN=1;AO=1730;CIGAR=1X;DP=171815;DPB=171815;DPRA=0;EPP=3759.66;EPPR=368574;GTI=0;LEN=1;MEANALT=3;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=909169;PAIRED=0;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=26442;QR=6102057;RO=169813;RPL=1730;RPP=3759.66;RPPR=368617;RPR=0;RUN=1;SAF=1730;SAP=3759.66;SAR=0;SRF=169808;SRP=368704;SRR=5;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	0:171815:169813:6102057:1730:26442:0,-546465
